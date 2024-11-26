@@ -12,7 +12,8 @@ interface ItemProps {
   items: Item[];
 }
 
-const ContinuousMarquee: React.FC<ItemProps> = ({ items }) => {
+const ContinuousMarquee: React.FC<ItemProps> = ({ items = [] }) => {
+
   const marqueeRef = useRef<HTMLDivElement | null>(null);
   const animationRef = useRef<number | null>(null);
   let position = 0;
@@ -81,7 +82,7 @@ const ContinuousMarquee: React.FC<ItemProps> = ({ items }) => {
         onMouseLeave={startMarquee} // Reanudar al quitar el mouse
       >
         {/* Duplicamos los ítems para efecto continuo */}
-        {[...items, ...items].map((item, index) => (
+        {Array.isArray(items) && [...items, ...items].map((item, index) => (
           <div
             key={`${item.id}-${index}`} // Más robusto usando item.id
             className="flex-none px-4"
