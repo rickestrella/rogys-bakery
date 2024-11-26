@@ -1,4 +1,4 @@
-# 🥐 Rogy's Bakery 🌟  
+# 🧁 Rogy's Bakery 🌟  
 
 ¡Bienvenidos a la página oficial de **Rogy's Bakery**! 🧁🎉  
 
