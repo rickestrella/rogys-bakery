@@ -1,5 +1,3 @@
-import favicon from "@/public/favicon.ico";
-
 export const chocolates = [
   {
     id: 1,
@@ -113,5 +111,3 @@ export const cookies = [
     image: "/products/cookies/cookie-6.jpg",
   },
 ];
-
-export { favicon };
