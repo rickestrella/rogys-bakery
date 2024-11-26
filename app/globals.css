@@ -19,6 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 } */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 :root {
   --background: #f7f5f0;
   --primary: #68786d;
@@ -28,4 +34,12 @@ body {
   --success: #8bc34a;
   --warning: #f7dc6f;
   --info: #2196f3;
+}
+.tooltip {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+@font-face {
+  font-family: 'avoda';
+  src: url('../public/fonts/Avoda.ttf');
 }

@@ -21,7 +21,7 @@ const ContinuousMarquee: React.FC<ItemProps> = ({ items }) => {
   const moveMarquee = () => {
     const container = marqueeRef.current;
     if (container) {
-      position -= 1; // Ajusta la velocidad del desplazamiento
+      position -= 0.45; // Ajusta la velocidad del desplazamiento
       const maxScroll = container.scrollWidth / 2; // Mitad porque hay duplicados
       if (Math.abs(position) >= maxScroll) {
         position = 0; // Reiniciar posición para bucle infinito
@@ -56,19 +56,19 @@ const ContinuousMarquee: React.FC<ItemProps> = ({ items }) => {
     <div
       className="relative overflow-hidden"
       style={{
-        width: "55%",
+        width: "85%",
         height: "auto",
         marginInline: "auto",
       }}
     >
       {/* Efecto de sombreado en los extremos */}
-      <div className="absolute top-0 left-0.5 w-10 h-full bg-gradient-to-r from-black via-transparent to-transparent pointer-events-none z-10"></div>
-      <div className="absolute top-0 right-0.5 w-10 h-full bg-gradient-to-l from-black via-transparent to-transparent pointer-events-none z-10"></div>
+      <div className="absolute top-0 left-0 w-10 h-full bg-gradient-to-r from-[#f7f5f0] via-transparent to-transparent pointer-events-none z-10"></div>
+      <div className="absolute top-0 right-0 w-10 h-full bg-gradient-to-l from-[#f7f5f0] via-transparent to-transparent pointer-events-none z-10"></div>
 
       {/* Contenedor del marquee */}
       <div
         ref={marqueeRef}
-        className="flex"
+        className="flex cursor-default"
         style={{
           display: "flex",
           whiteSpace: "nowrap",
@@ -84,14 +84,16 @@ const ContinuousMarquee: React.FC<ItemProps> = ({ items }) => {
           <div
             key={`${item.id}-${index}`} // Más robusto usando item.id
             className="flex-none px-4"
-            style={{
-              width: "240px", // Ajusta el ancho según los ítems
-            }}
+            // style={{
+            //   width: "120px", // Ajusta el ancho según los ítems
+            // }}
           >
             <Image
               src={item.image}
               alt={item.alt ?? `Slide ${index}`}
-              className="w-full h-full object-contain"
+              className="w-full h-full object-cover object-center p-1"
+              width={120}
+              height={120}
             />
           </div>
         ))}
