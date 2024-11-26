@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 interface Item {
   id: number;
@@ -18,7 +18,8 @@ const ContinuousMarquee: React.FC<ItemProps> = ({ items }) => {
   let position = 0;
 
   // Función que mueve el marquee
-  const moveMarquee = () => {
+  // Memoriza la función para evitar recrearla en cada render
+  const moveMarquee = useCallback(() => {
     const container = marqueeRef.current;
     if (container) {
       position -= 0.45; // Ajusta la velocidad del desplazamiento
@@ -29,7 +30,7 @@ const ContinuousMarquee: React.FC<ItemProps> = ({ items }) => {
       container.style.transform = `translateX(${position}px)`;
     }
     animationRef.current = requestAnimationFrame(moveMarquee);
-  };
+  }, []); // No depende de ninguna prop o estado, así que la dependencia es vacía
 
   // Iniciar la animación
   useEffect(() => {
