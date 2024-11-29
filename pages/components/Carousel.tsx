@@ -16,7 +16,6 @@ interface ItemProps {
 }
 
 const ContinuousMarquee: React.FC<ItemProps> = ({ items = [] }) => {
-  const [modalOpen, setModalOpen] = useState(false);
   const marqueeRef = useRef<HTMLDivElement | null>(null);
   const animationRef = useRef<number | null>(null);
   let position = 0;

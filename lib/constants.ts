@@ -5,6 +5,7 @@ export const chocolates = [
     price: 2.99,
     description: "A delicious chocolate bar.",
     image: "/products/chocolates/chocolate-1.jpg",
+    alt: "",
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const chocolates = [
     price: 5.99,
     description: "A moist and delicious chocolate cake.",
     image: "/products/chocolates/chocolate-2.jpg",
+    alt: "",
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const chocolates = [
     price: 7.99,
     description: "A light and airy chocolate mousse.",
     image: "/products/chocolates/chocolate-3.jpg",
+    alt: "",
   },
   {
     id: 4,
@@ -26,6 +29,7 @@ export const chocolates = [
     price: 7.99,
     description: "A light and airy chocolate mousse.",
     image: "/products/chocolates/chocolate-4.jpg",
+    alt: "",
   },
   {
     id: 5,
@@ -33,6 +37,7 @@ export const chocolates = [
     price: 7.99,
     description: "A light and airy chocolate mousse.",
     image: "/products/chocolates/chocolate-5.jpg",
+    alt: "",
   },
   {
     id: 6,
@@ -40,6 +45,7 @@ export const chocolates = [
     price: 7.99,
     description: "A light and airy chocolate mousse.",
     image: "/products/chocolates/chocolate-6.jpg",
+    alt: "",
   },
 ];
 
@@ -50,6 +56,7 @@ export const cupcakes = [
     price: 2.99,
     description: "A delicious vanilla cupcake.",
     image: "/products/cupcakes/cupcake-1.jpg",
+    alt: "",
   },
   {
     id: 2,
@@ -57,6 +64,7 @@ export const cupcakes = [
     price: 2.99,
     description: "A delicious chocolate cupcake.",
     image: "/products/cupcakes/cupcake-2.jpg",
+    alt: "",
   },
   {
     id: 3,
@@ -64,6 +72,7 @@ export const cupcakes = [
     price: 3.99,
     description: "A delicious red velvet cupcake.",
     image: "/products/cupcakes/cupcake-3.jpg",
+    alt: "",
   },
 ];
 
@@ -74,6 +83,7 @@ export const cookies = [
     price: 2.99,
     description: "A delicious chocolate bar.",
     image: "/products/cookies/cookie-1.jpg",
+    alt: "",
   },
   {
     id: 2,
@@ -81,6 +91,7 @@ export const cookies = [
     price: 5.99,
     description: "A moist and delicious chocolate cake.",
     image: "/products/cookies/cookie-2.jpg",
+    alt: "",
   },
   {
     id: 3,
@@ -88,6 +99,7 @@ export const cookies = [
     price: 7.99,
     description: "A light and airy chocolate mousse.",
     image: "/products/cookies/cookie-3.jpg",
+    alt: "",
   },
   {
     id: 4,
@@ -95,6 +107,7 @@ export const cookies = [
     price: 7.99,
     description: "A light and airy chocolate mousse.",
     image: "/products/cookies/cookie-4.jpg",
+    alt: "",
   },
   {
     id: 5,
@@ -102,6 +115,7 @@ export const cookies = [
     price: 7.99,
     description: "A light and airy chocolate mousse.",
     image: "/products/cookies/cookie-5.jpg",
+    alt: "",
   },
   {
     id: 6,
@@ -109,5 +123,6 @@ export const cookies = [
     price: 7.99,
     description: "A light and airy chocolate mousse.",
     image: "/products/cookies/cookie-6.jpg",
+    alt: "",
   },
 ];
