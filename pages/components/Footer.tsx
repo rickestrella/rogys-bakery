@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import {
   AiOutlineFacebook,
-  AiOutlineInstagram,
+  // AiOutlineInstagram,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 
