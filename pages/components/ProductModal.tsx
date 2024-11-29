@@ -20,7 +20,7 @@ const ProductModal: React.FC<{ item: Item; onClose: () => void }> = ({
         <h2 className="text-xl font-bold mb-5">{item.name}</h2>
         <Image
           src={item.image}
-          alt={item.alt ?? item.name}
+          alt={item.alt ?? "Image description"}
           width={150}
           height={150}
           className="object-contain object-center size-48"
