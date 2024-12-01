@@ -8,7 +8,7 @@ interface ItemProps {
   description?: string;
   image?: string;
   name?: string;
-  price?: string;
+  price?: number;
 }
 
 interface Item {
@@ -16,7 +16,7 @@ interface Item {
   time: number;
 }
 
-const Slideshow: React.FC<Item> = ({ items, time=5000 }) => {
+const Slideshow: React.FC<Item> = ({ items, time = 5000 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Slideshow: React.FC<Item> = ({ items, time=5000 }) => {
     }, time);
 
     return () => clearInterval(interval);
-  }, [items.length]);
+  }, [items.length, time]);
 
   return (
     <div className={`relative ${classes.slideshow}`}>
