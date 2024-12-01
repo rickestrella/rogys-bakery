@@ -17,7 +17,7 @@ interface Item {
   time: number;
 }
 
-const Slideshow: React.FC<Item> = ({ items, time = 5000 }) => {
+const Slideshow: React.FC<Item> = ({ items = [], time = 5000 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
