@@ -9,14 +9,14 @@ import {
 const Footer: React.FC = () => {
   return (
     <footer className="bg-primary text-white text-center py-4">
-      <p className="flex items-center justify-center">
-      <Link
-        href="https://rcservice.tech"
-        target="_blank"
-        className="hover:underline hover:text-sky-600"
-      >
-        Powered by RCService &nbsp;
-      </Link>
+      <p className="flex flex-col lg:flex-row items-center justify-center">
+        <Link
+          href="https://rcservice.tech"
+          target="_blank"
+          className="hover:underline hover:text-sky-600"
+        >
+          Powered by RCService &nbsp;
+        </Link>
         © {new Date().getFullYear()} Rogy&apos;s Bakery. Todos los derechos
         reservados.
       </p>
