@@ -20,6 +20,8 @@ const Slideshow: React.FC<Item> = ({ items, time = 5000 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
+    if (items.length === 0) return;
+
     const interval = setInterval(() => {
       setCurrentSlide((prevIndex) =>
         prevIndex < items.length - 1 ? prevIndex + 1 : 0
@@ -27,7 +29,11 @@ const Slideshow: React.FC<Item> = ({ items, time = 5000 }) => {
     }, time);
 
     return () => clearInterval(interval);
-  }, [items.length, time]);
+  }, [items, time]);
+
+  if (items.length === 0) {
+    return <p>No hay elementos por el momento. :(</p>;
+  }
 
   return (
     <div className={`relative ${classes.slideshow}`}>
