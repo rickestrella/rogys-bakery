@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import {
   AiOutlineFacebook,
-  // AiOutlineInstagram,
+  AiOutlineInstagram,
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 
@@ -28,13 +28,13 @@ const Footer: React.FC = () => {
         >
           <AiOutlineFacebook className="size-6" />
         </Link>
-        {/* <Link
-          href="https://www.instagram.com/rogyscreations/"
+        <Link
+          href="https://www.instagram.com/rogys.bakery/profilecard/?igsh=emdlNnMwd2t0c2hi"
           target="_blank"
           className="hover:text-secondary"
         >
           <AiOutlineInstagram className="size-6" />
-        </Link> */}
+        </Link>
         <Link href="https://wa.link/44zrl1" className="hover:text-secondary">
           <AiOutlineWhatsApp className="size-6" />
         </Link>
